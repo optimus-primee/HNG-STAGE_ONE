@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Data</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="profile">
+            <!-- Slack Display Picture -->
+            <div class="profile-img-wrapper">
+              <div id="profile-image">
+                <img
+                  src="assests/images/slack_profile_picture.JPG"
+                  alt="Rhouzmerii"
+                  data-testid="slackDisplayImage"
+                />
+              </div>
+            </div>
+
+            <!-- Slack Name -->
+            <p data-testid="slackUserName" id="slack_username">
+              AJAYI OKHUOMON
+            </p>
+
+            <!-- Track -->
+            <p data-testid="myTrack" id="my-track">Frontend</p>
+          </div>
+          <div class="left-side">
+            <div class="live-data">
+              <!-- Current Day of the Week -->
+              <div class="current-day">
+                <p class="current">Day</p>
+                <p data-testid="currentDayOfTheWeek" class="current-data">
+                  Loading...
+                </p>
+              </div>
+              <div class="current-time">
+                <p class="current">UTC Time</p>
+                <!-- Current UTC Time -->
+                <p data-testid="currentUTCTime" class="current-data">
+                  Loading...
+                </p>
+              </div>
+            </div>
+            <!-- Connect Github -->
+
+            <button>
+              <a
+                href="https://github.com/rhouzmerii/HNG-STAGE_ONE"
+                target="_blank"
+                data-testid="githubURL"
+              >
+                Github Repo</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

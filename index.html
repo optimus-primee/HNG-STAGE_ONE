@@ -12,6 +12,8 @@
       <div class="container">
         <div class="wrapper">
           <div class="profile">
+            <!-- Slack Name -->
+            <p data-testid="slackUserName" id="slack_username">Rhouzmerii</p>
             <!-- Slack Display Picture -->
             <div class="profile-img-wrapper">
               <div id="profile-image">
@@ -22,46 +24,33 @@
                 />
               </div>
             </div>
-
-            <!-- Slack Name -->
-            <p data-testid="slackUserName" id="slack_username">
-              AJAYI OKHUOMON
-            </p>
-
-            <!-- Track -->
-            <p data-testid="myTrack" id="my-track">Frontend</p>
           </div>
-          <div class="left-side">
-            <div class="live-data">
-              <!-- Current Day of the Week -->
-              <div class="current-day">
-                <p class="current">Day</p>
-                <p data-testid="currentDayOfTheWeek" class="current-data">
-                  Loading...
-                </p>
-              </div>
-              <div class="current-time">
-                <p class="current">UTC Time</p>
-                <!-- Current UTC Time -->
-                <p data-testid="currentUTCTime" class="current-data">
-                  Loading...
-                </p>
-              </div>
+          <div class="live-data">
+            <!-- Current Day of the Week -->
+            <div class="current-day">
+              <p data-testid="currentDayOfTheWeek" class="current-data">
+                Loading...
+              </p>
             </div>
-            <!-- Connect Github -->
-
-            <button>
-              <a
-                href="https://github.com/rhouzmerii/HNG-STAGE_ONE"
-                target="_blank"
-                data-testid="githubURL"
-              >
-                Github Repo</a
-              >
-            </button>
+            <div class="current-time">
+              <!-- Current UTC Time -->
+              <p data-testid="currentUTCTime" class="current-data">
+                Loading...
+              </p>
+            </div>
+            <!-- Track -->
+            <p data-testid="myTrack" id="my-track">Frontend Track</p>
           </div>
+          <button>
+            <a
+              href="https://github.com/rhouzmerii/HNG-STAGE_ONE"
+              target="_blank"
+              data-testid="githubURL"
+            >
+              Github Repo</a
+            >
+          </button>
         </div>
-      
       </div>
     </div>
   </body>

@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateUTCTime, 1000);
 });
 
-// Function to update the UTC time
+
+// Function to update the UTC time in milliseconds
 function updateUTCTime() {
     const now = new Date();
-    const currentUTCTime = now.toISOString().substr(11, 8);
-    document.querySelector('[data-testid="currentUTCTime"]').textContent = `${currentUTCTime} UTC`;
+    const currentUTCTimeInMillis = now.getTime(); // Get time in milliseconds
+    document.querySelector('[data-testid="currentUTCTime"]').textContent = `${currentUTCTimeInMillis}`;
 }
